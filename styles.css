@@ -1,26 +1,67 @@
-body{
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    background-color: #42523f;
+}
+section {
+    height: 100vh; /*vh = viewport height*/
+    width: 100%;
+    background-color: #7e8081;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+#home {
+    background-color: #1C8106;
+
+}
+#aboutme {
+    background-color: #6081C3;
 }
 
-.header {
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
+#education {
+    background-color: #A83E11;
 }
 
-/* Page content */
-.content {
-    padding: 16px;
+#contactme {
+    background-color: #ad7962;
 }
-  
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
+nav {
+    position: sticky;
     top: 0;
-    width: 100%
+    background-color: #eef0f1;
 }
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 102px;
+nav .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px;
+}
+nav .container ul li {
+    display: inline-block;
+    border-radius:5px;
+}
+nav .container ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+}
+nav .container ul li.active {
+    background-color: #3b49df;
+    border-radius:30px;
+    transition: 0.3s;
+}
+nav .container ul li.active a {
+    color: #ffffff;
 }
