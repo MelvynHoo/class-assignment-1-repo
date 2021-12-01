@@ -20,9 +20,15 @@ section {
     /*text-transform: uppercase;*/
 }
 
-.icon{
+nav .icon{
+    position:fixed;
+    left:30px;
+    width: 50%;
+    top: 20px;
+}
+
+nav .icon a{
     font-family: 'Lobster';
-    padding-right: 72%;
     font-size: 30px;
     color: black;
     text-decoration: none;
@@ -33,11 +39,13 @@ nav {
     top: 0;
     background-color: #ffffff;
     z-index: 1; /*To not allow the content to go over the header when scroll*/
+    height: 75px;
 }
 nav .container1 {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    position:fixed;
+    right: 0px;
+    width: 50%;
+    /*max-width: 100%;*/
     padding: 20px;
 }
 nav .container1 ul{
