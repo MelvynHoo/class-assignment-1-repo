@@ -37,7 +37,7 @@ nav .icon a{
 nav {
     position: sticky;
     top: 0;
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     z-index: 1; /*To not allow the content to go over the header when scroll*/
     height: 75px;
 }
@@ -71,23 +71,24 @@ nav .container1 ul li.active a {
 }
 
 #home {
-    background-color: #1C8106;
+    background-color: #000000;
 
 }
 #aboutme {
-    background-color: #6081C3;
+    background-color: #ffffff;
     padding: 125px;
 }
 
 #portfolio {
-    background-color: #A83E11;
+    background-color: #0e0e0e;
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-#education {
-    background-color: #ad7962;
+#contactme {
+    background-color: #ffffff;
+    font-size: 20px;
 }
 
 /* Home Page Section */
@@ -98,8 +99,7 @@ nav .container1 ul li.active a {
 
 .container2 img{
     width: 100%; 
-    height: 100vh;
-    
+    height: 100%;
 }
 
 .intro{
@@ -134,12 +134,12 @@ nav .container1 ul li.active a {
 	text-align: center;
 	margin:auto;
 	padding: 1.5em;
-	background: rgb(255, 255, 255);
+	background: rgb(241, 241, 241);
     border-radius: 30px;
     box-shadow: 0 8px 0 0 rgba(0,0,0,0.1);
 }
 .about2 {
-    font-size: 20px;
+    font-size: 18px;
     width: 70%;
     height: 100%;
 	text-align: left;
@@ -149,12 +149,38 @@ nav .container1 ul li.active a {
 
 /* Portfolio Section */
 .container3{
+    font-size: 18px;
     width: 100%;
+}
+.container3 h1{
+    text-align: center;
     color: #ffffff;
 }
 
-.container3 img {
+.container3 p {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    color: #ffffff;
+}
+
+.container4{
+    width: 65%;
+    color: #ffffff;
+    float: left;
+    padding-top: 1%;
+}
+
+.container4 img {
     width: 100%;
+}
+
+.container5 {
+    width: 35%;
+    color: #ffffff;
+    float: left;
+    text-align: left;
+    margin-top: 1%;
 }
 
 * {box-sizing:border-box}
@@ -250,4 +276,374 @@ nav .container1 ul li.active a {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Contact Me Section */
+.topcontact{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #3b49df;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:30px;
+}
+  
+input[type=submit]:hover {
+    background-color: #293297;
+    border-radius:30px;
+}
+
+.row{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Footer Section*/
+.footer{
+    height: 75px;
+    background-color: #0e0e0e;
+    color: white;
+}
+
+.notes{
+    left:30px;
+    top: 20px;
+    padding-top: 1.5%;
+}
+
+/*responsive*/
+/*tablet*/
+@media only screen and (max-width: 1640px) {
+
+    .about1 {
+        font-size: 18px;
+    }
+
+    .slideshow-container {
+        max-width: 900px;
+    }
+        
+}
+
+@media only screen and (max-width: 1500px) {
+
+    section{
+        height: 95vh;
+    }
+
+    .about1 {
+        font-size: 18px;
+    }
+        
+    .slideshow-container {
+        max-width: 800px;
+    }
+        
+}
+
+@media only screen and (max-width: 1430px) {
+    #aboutme {
+        padding: 125px;
+    }
+
+    .intro{
+        font-size: 25px;
+    }
+    section{
+        height: 90vh;
+    }
+    .about1 {
+        font-size: 16px;
+    }
+    .about2 {
+        font-size: 16px;
+    }
+
+    .slideshow-container {
+        max-width: 700px;
+    }
+    .container3{
+        font-size: 16px;
+    }
+    .topcontact{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #aboutme {
+        padding: 100px;
+    }
+    .intro{
+        font-size: 25px;
+    }
+    section{
+        height: 85vh;
+    }
+    .profilepic {
+        width: 200px;
+    }
+    .about1 {
+        width: 30%;
+        font-size: 16px;
+    }
+    .about2 {
+        font-size: 16px;
+        margin: 30px auto 0;
+    }
+
+    .slideshow-container {
+        max-width: 650px;
+    }
+    .container3{
+        font-size: 16px;
+    }
+    .topcontact{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #aboutme {
+        padding: 75px;
+    }
+    .profilepic {
+        width: 175px;
+    }
+    .about1 {
+        width: 30%;
+    }
+    .about2 {
+        margin: 40px auto 0;
+    }
+    .slideshow-container {
+        max-width: 575px;
+    }
+
+    .container5{
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #aboutme {
+        padding: 25px;
+    }
+    
+    .about1 {
+        font-size: 14px;
+        width: 30%;
+        height: 60%;
+    }
+    .about2 {
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        margin: 120px auto 0;
+        padding: 1.5em;
+    }
+    .container5 {
+    width: 30%;
+    height: 80%;
+    font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 965px) {
+    #home {
+        height: 70vh;
+    }
+    #aboutme {
+        height: 100vh;
+    }
+    #portfolio {
+        height: 140vh;
+    }
+    #contactme {
+        height: 100vh;
+    }
+    .intro{
+        position: absolute;
+        top:40%;
+        bottom:40%;
+        left: 30px;
+        font-size: 25px;
+    }
+    section {
+        height: 150vh;
+    }
+
+    nav .icon{
+        top: 35px;
+    }
+    nav {
+        height: 110px;
+    }
+
+    .about1 {
+        width: 40%;
+        height: 40%;
+        position:absolute;
+    }
+    .about2 {
+        font-size: 18px;
+        width: 80%;
+        height: 100%;
+        margin: 360px auto 0;
+        position:absolute;
+    }
+    .container3{
+        font-size: 18px;
+    }
+    .container4{
+        width: 90%;
+        color: #ffffff;
+        padding-top: 5%;
+        padding-left:20px;
+        position: absolute;
+    }
+    .container5{
+        width: 90%;
+        color: #ffffff;
+        float: center;
+        padding-top: 1%;
+        padding-left:30px;
+        position: absolute;
+        margin: 500px auto 0;
+        font-size: 16px;
+    }
+
+    /*Contact Page*/
+    .topcontact{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .row{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .column{
+        float: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #home {
+        height: 50vh;
+    }
+    #aboutme {
+        height: 140vh;
+    }
+    #portfolio {
+        height: 130vh;
+    }
+    #contactme {
+        height: 100vh;
+    }
+    .intro{
+        position: absolute;
+        top:40%;
+        bottom:40%;
+        left: 30px;
+        font-size: 17px;
+    }
+    section {
+        height: 150vh;
+    }
+
+    nav .icon{
+        position:fixed;
+        left:30px;
+        width: 50%;
+        top: 75px;
+    }
+    nav {
+        height: 180px;
+    }
+
+    .about1 {
+        width: 80%;
+        height: 40%;
+        position:absolute;
+    }
+    .about2 {
+        font-size: 18px;
+        width: 80%;
+        height: 100%;
+        margin: 360px auto 0;
+        position:absolute;
+    }
+    .container3{
+        font-size: 18px;
+    }
+    .container4{
+        width: 90%;
+        color: #ffffff;
+        padding-top: 5%;
+        padding-left:20px;
+        position: absolute;
+    }
+    .container5{
+        width: 90%;
+        color: #ffffff;
+        float: center;
+        padding-top: 1%;
+        padding-left:30px;
+        position: absolute;
+        margin: 360px auto 0;
+        font-size: 16px;
+    }
+
+    /*Contact Page*/
+    .topcontact{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .row{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .column{
+        float: left;
+        width: 100%;
+    }
 }
