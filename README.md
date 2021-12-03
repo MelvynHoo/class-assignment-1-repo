@@ -18,3 +18,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
 https://www.w3schools.com/howto/howto_css_contact_section.asp
 
 Used w3schools and stackoverflow.
+
+GITHUB:
+https://melvynhoo.github.io/class-assignment-1-repo/
+
