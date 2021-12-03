@@ -10,3 +10,11 @@ The submit button at the contact page have a hover feature and you can type what
 On the about me page, you can see the icon below my profile picture, you can click on them to go to my website related to the icons.
 
 Lastly, my logo and the top right of the navigation, it can be use to refresh the page if you want to.
+
+
+references:
+https://codepen.io/areeburrub/pen/mdWjRYb
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+https://www.w3schools.com/howto/howto_css_contact_section.asp
+
+Used w3schools and stackoverflow.
